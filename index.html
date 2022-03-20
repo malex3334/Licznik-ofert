@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Kalkulator ofert</h1>
+    </div>
+    <div class="background-container">
+      <div class="box-container">
+        <!-- FIRST OFFER -->
+        <div class="box">
+          <h2 class="header">Oferta #1</h2>
+          <span class="form-heading">Wprowadź nazwę pierwszej firmy</span>
+          <!-- wprowadzanie danych -->
+          <input
+            id="first-offerent-name"
+            type="value"
+            placeholder="Nazwa pierwszej firmy"
+            class="input"
+          />
+
+          <!-- logowanie odpowiedzi -->
+
+          <!-- cena -->
+          <span class="form-heading">Wprowadź wycenę pierwszej</span>
+          <input
+            id="first-offerent-price"
+            placeholder="Wycena (brutto)"
+            type="number"
+            class="input"
+          />
+
+          <!-- termin -->
+          <span class="form-heading">Wprowadź termin pierwszej</span>
+          <input
+            id="first-offerent-termin"
+            placeholder="Termin realizacji (w dniach)"
+            type="number"
+            class="input"
+          />
+          <!-- <span id="first-offerent-name-answer" class="form-answer"
+          >Nazwa firmy</span
+        >
+        <span id="first-offerent-price-answer" class="form-answer">Cena</span>
+
+        <span id="first-offerent-termin-answer" class="form-answer"
+          >Termin</span
+        > -->
+          <span id="first-offerent-total-score" class="form-answer total-score"></span>
+          </span>
+
+        </div>
+        <!-- second offer -->
+        <div class="box">
+          <h2 class="header">Oferta #2</h2>
+          <span class="form-heading">Wprowadź nazwę drugiej firmy</span>
+          <!-- wprowadzanie danych -->
+          <input
+            id="second-offerent-name"
+            placeholder="Nazwa drugiej firmy"
+            type="value"
+            class="input"
+          />
+
+          <!-- logowanie odpowiedzi -->
+
+          <!-- cena -->
+          <span class="form-heading">Wprowadź wycenę drugiej firmy</span>
+          <input
+            id="second-offerent-price"
+            placeholder="Wycena (brutto)"
+            type="number"
+            class="input"
+          />
+
+          <!-- termin -->
+          <span class="form-heading">Wprowadź termin drugiej firmy</span>
+          <input
+            id="second-offerent-termin"
+            placeholder="Termin realizacji (w dniach)"
+            type="number"
+            class="input"
+          />
+
+          <span
+            id="second-offerent-total-score"
+            class="form-answer total-score"
+          >
+          </span>
+
+        </div>
+        <!-- third offer -->
+        <div class="box">
+          <h2 class="header">Oferta #3</h2>
+          <span class="form-heading">Wprowadź nazwę trzeciej firmy</span>
+          <!-- wprowadzanie danych -->
+          <input
+            id="third-offerent-name"
+            placeholder="Nazwa trzeciej firmy"
+            type="value"
+            class="input"
+          />
+
+          <!-- logowanie odpowiedzi -->
+
+          <!-- cena -->
+          <span class="form-heading">Wprowadź wycenę trzeciej</span>
+          <input
+            id="third-offerent-price"
+            placeholder="Wycena (brutto)"
+            type="number"
+            class="input"
+          />
+
+          <!-- termin -->
+          <span class="form-heading">Wprowadź termin trzeciej</span>
+          <input
+            id="third-offerent-termin"
+            placeholder="Termin realizacji (w dniach)"
+            type="number"
+            class="input"
+          />
+
+          <span id="third-offerent-total-score" class="form-answer total-score">
+          </span>
+        </div>
+
+        <!--  waga -->
+
+        <div class="box">
+          <h2 class="header">Waga kryteriów</h2>
+          <span class="form-heading"></span>
+          <!-- wprowadzanie danych -->
+          <!-- cena -->
+          <span class="form-heading">Wprowadź wagę ceny</span>
+          <input id="weight-price" type="number" class="input" />
+
+          <!-- <span id="weight-price-answer" class="form-answer">Waga ceny</span> -->
+
+          <!-- termin -->
+          <span class="form-heading">Wprowadź wagę terminu</span>
+          <input id="termin-price" type="number" class="input" />
+
+          <span id="weightpoints-error" class="form-answer"
+            >Waga musi równać się 100</span
+          >
+
+          <button id="first-offerent-name-btn" class="btn check">
+            Wprowadź
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="copyrights">Copyrights M.A.</footer>
+  </body>
+  <script src="script.js"></script>
+</html>
